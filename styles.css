@@ -19,7 +19,29 @@ body {
   height: auto;
   z-index: -100;
 }
-
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.button3 {
+    padding: 50px;
+    opacity: 0.3;
+    color: black;
+    border-radius: 50%;
+	}
+  .button3:hover {
+    opacity: 0.7;
+    color: black;
+  }
 /* These just style the content */
 article {
 /*  just a fancy border  */
@@ -59,5 +81,40 @@ h2 span {
 }
 
 h2 span a {
-  color: #fff;
+  color: black;
+}
+#portalContainer {
+  margin: auto;
+}
+#portalCircle {
+  z-index: -1;
+  position: relative;
+  top: -270px;
+
+  margin: auto;
+  width: 549px;
+  height: 535px;
+  border-radius: 50%;
+  background-image: url("http://www.andrewboyer.us/resources/Untitled-1.png");
+  background-repeat: no-repeat;
+  transform: rotateX(150deg);
+  animation: Rotation 3s linear infinite;
+
+}
+
+
+
+@keyframes Rotation {
+  0% {
+    transform:rotateX(70deg) rotateZ(0deg);
+  }
+  25% {
+    transform:rotateX(71deg) rotateZ(90deg);
+  }
+  75% {
+    transform:rotateX(70deg) rotateZ(270deg);
+  }
+  100% {
+    transform:rotateX(71deg) rotateZ(360deg);
+  }
 }
